@@ -1,0 +1,1 @@
+# what-to-do-on-fresh-install-linux-mint
