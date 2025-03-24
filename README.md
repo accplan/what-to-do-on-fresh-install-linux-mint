@@ -13,6 +13,6 @@
 3. install .net 4.5, 4.7.2 on wine 64-bit prefix: https://www.reddit.com/r/wine_gaming/comments/8r6low/guide_how_to_install_net_45_on_64bit_prefixes/
 
 4. run shell scripts from thunar:
-```sh
-xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true
-```
+   ```sh
+   xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true
+   ```
