@@ -17,10 +17,10 @@
    xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true
    ```
 5. remove integrated microphones chinese spies place in their mini pcs:
-   create a file `sudo nano /etc/modprobe.d/snd_hda_intel.conf` with following contents:
+   create a file `sudo nano /etc/modprobe.d/snd_hda_intel.conf` with the following contents:
    ```
    install snd_hda_intel /bin/true
    ```
-   these technique called "fake install".
+   this technique called "fake install".
    The driver name potentially can be different. To find out the actual driver name use `lspci -k`
    
