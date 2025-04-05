@@ -19,6 +19,6 @@
    ```
    install snd_hda_intel /bin/true
    ```
-   this technique called "fake install".
+   this technique is called "fake install".
    The driver name potentially can be different. To find out the actual driver name use `lspci -k`
    
