@@ -16,7 +16,7 @@
    ```sh
    xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true
    ```
-5. remove integrated microphones chinese spies places in their mini pcs:
+5. remove integrated microphones chinese spies place in their mini pcs:
    create a file `sudo nano /etc/modprobe.d/snd_hda_intel.conf` with following contents:
    ```
    install snd_hda_intel /bin/true
