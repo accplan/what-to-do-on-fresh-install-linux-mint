@@ -22,3 +22,7 @@
    this technique is called "fake install".
    The driver name potentially can be different. To find out the actual driver name use `lspci -k`
    
+5. mount temp directory on a bigger disk if root disk is small. Add this entry to /etc/fstab:
+   ```
+   /media/user/bigger-drive/tmp   /tmp   none   bind   0   0
+   ```
