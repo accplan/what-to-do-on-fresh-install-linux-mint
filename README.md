@@ -10,7 +10,7 @@
 
 2. add `vm.swappiness=2` (or other small number, in percent of total RAM) to `/etc/sysctl.conf` (fixes problems with swap)
 
-3. run shell scripts from thunar:
+3. enable the ability to run shell scripts from thunar:
    ```sh
    xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true
    ```
@@ -26,3 +26,4 @@
    ```
    /media/user/bigger-drive/tmp   /tmp   none   bind   0   0
    ```
+   Symbolic link will not work for apt: it will complain that it doesn't have enough permissions to create temporary files.
