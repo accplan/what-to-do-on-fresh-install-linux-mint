@@ -27,3 +27,7 @@
    /media/user/bigger-drive/tmp   /tmp   none   bind   0   0
    ```
    Symbolic link will not work for apt: it will complain that it doesn't have enough permissions to create temporary files.
+6. fix freeze games (including unity games) when wine application is losing focus:
+    - Open Regedit with `wine regedit`
+    - Go to HKEY_CURRENT_USER\Software\Wine\X11 Driver, creating Key "X11 Driver" if it does not exist
+    - Create a new String entry named "UseTakeFocus" with value "N"
