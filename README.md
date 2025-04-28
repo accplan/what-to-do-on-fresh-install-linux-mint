@@ -31,3 +31,5 @@
     - Open Regedit with `wine regedit`
     - Go to HKEY_CURRENT_USER\Software\Wine\X11 Driver, creating Key "X11 Driver" if it does not exist
     - Create a new String entry named "UseTakeFocus" with value "N"
+  
+7. run `systemd-analyze blame` to see which parts of systemd slows down the boot process. You probably want to disable this: `systemctl disable NetworkManager-wait-online.service` 
