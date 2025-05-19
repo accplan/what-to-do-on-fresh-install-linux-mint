@@ -34,4 +34,4 @@
   
 7. run `systemd-analyze blame` to see which parts of systemd slows down the boot process. You probably want to disable this: `systemctl disable NetworkManager-wait-online.service` 
 
-8. disable expensive thumblerd thumbnailers in `/etc/xdg/tumbler/tumbler.rc` (ex.: PDF, epub), or disable thumbnailing in the file manager altogether (Thunar, Edit -> Preferences, Show Thumbnails -> Never)
+8. disable expensive tumblerd thumbnailers in `/etc/xdg/tumbler/tumbler.rc` (ex.: PDF, epub), or disable thumbnailing in the file manager altogether (Thunar, Edit -> Preferences, Show Thumbnails -> Never)
