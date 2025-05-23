@@ -2,7 +2,11 @@ for AMD Instinct GPUs enable XNACK: https://niconiconi.neocities.org/tech-notes/
 
 # Enabling XNACK
 
-To enable XNACK in the Linux kernel, the kernel must be up-to-date with HMM support. Then, it can enabled by two methods: a boot-time kernel argument amdgpu.noretry=0 by putting this argument in the bootloader configuration, alternatively, passing the amdgpu kernel module parameter noretry=0 by declaring options amdgpu noretry=0 in /etc/modprobe.d.
+To enable XNACK in the Linux kernel, the kernel must be up-to-date with HMM support. Then, it can enabled by two methods: a boot-time kernel argument
+
+```amdgpu.noretry=0```
+
+by putting this argument in the bootloader configuration, alternatively, passing the amdgpu kernel module parameter noretry=0 by declaring options amdgpu noretry=0 in /etc/modprobe.d.
 
 The Linux kernel documentation says:
 
