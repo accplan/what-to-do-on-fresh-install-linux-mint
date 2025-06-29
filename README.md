@@ -36,4 +36,4 @@
 
 8. disable expensive tumblerd thumbnailers in `/etc/xdg/tumbler/tumbler.rc` (ex.: PDF, epub), or disable thumbnailing in the file manager altogether (Thunar, Edit -> Preferences, Show Thumbnails -> Never)
 
-9. fix choppiness of virt-manager with virtio 3d acceleration enabled: run virt-manager like this: `vblank_mode=0 virt-manager` (optionally can edit startup icon: `bash -c "vblank_mode=0 virt-manager"`)
+9. fix choppiness of virt-manager with virtio 3d acceleration enabled: run virt-manager like this: `vblank_mode=0 virt-manager` (optionally can edit startup icon: `bash -c "vblank_mode=0 virt-manager"`). Source: https://github.com/virt-manager/virt-manager/issues/228#issuecomment-1802768955
